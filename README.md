@@ -1,16 +1,52 @@
 # Customer Clustering App
 
-A simple Streamlit app that performs customer segmentation using KMeans clustering.
+This project segments mall customers into meaningful clusters using KMeans unsupervised learning. Built with Streamlit and modularized in Python.
 
-## Features
+## 🎯 Project Goals
 
-- Loads customer data (`mall_customers.csv`)
-- Uses Annual Income and Spending Score for clustering
-- Visualizes results with color-coded scatter plot
+- 📈 Cluster customers based on income and spending behavior
+- 📊 Visualize clusters to understand market segmentation
+- 🧪 Apply unsupervised learning using `KMeans`
 
-## How to Run
+## 📁 Folder Structure
 
-1. Install requirements:
+Customer_Clustering_App/
+│
+├── data/
+│ └── mall_customers.csv
+├── src/
+│ ├── dataloader.py
+│ ├── preprocessing.py
+│ ├── model.py
+│ └── utils.py
+├── app.py
+├── requirements.txt
+├── README.md
+└── .streamlit/
+└── config.toml
+
+## ⚙️ How to Run
+
+1. Clone the repo  
+2. Install required libraries:
 
 ```bash
 pip install -r requirements.txt
+streamlit run app.py
+📘 Dataset
+File: mall_customers.csv
+
+Columns used:
+
+Annual Income (k$)
+
+Spending Score (1-100)
+
+📦 Features
+Allows user to select number of clusters (K)
+
+Performs standard scaling
+
+Trains KMeans model and visualizes customer segments
+
+Displays cluster centers and color-coded customer groups
