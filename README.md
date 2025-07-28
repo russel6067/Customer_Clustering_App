@@ -50,3 +50,7 @@ Performs standard scaling
 Trains KMeans model and visualizes customer segments
 
 Displays cluster centers and color-coded customer groups
+## 🌐 Live App
+
+You can try the deployed Streamlit app here:  
+🔗 [Customer Clustering App](https://customerclusteringapp-russel.streamlit.app/)
